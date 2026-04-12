@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Родовое Древо</title>
+<style type="text/css">
+body {
+    background-color: #9370DB;
+    background-image: url(img/drevo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .clickable-image {
+    width: 70%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+  }
+
+  /* Модальное затемнение */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Увеличенное изображение */
+  .modal-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .modal-overlay img.zoomed {
+    transform: scale(1);
+  }
+  
+    
+.bordered-blue {
+  border: 3px solid #007BFF;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.bordered-red {
+  border: 3px solid #DC3545;
+  border-radius: 8px;
+  padding: 4px;
+}
+</style>
+
+ </head>
+ <body> 
+ 
+ 
+ <div id="table">
+
+ <table style="color: #FFFF00; width: 100%;" border="0">
+ <tbody>
+   
+ <tr>
+<td colspan="12" align="center">Родовое Древо</td>
+   </tr>
+   
+<tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+ <td  colspan="1" align="center"></td>
+  <td  colspan="1" align="center"></td>
+   <td  colspan="1" align="center"></td>
+	
+	 <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalov_A.N.jpg" alt="1" />Шабалов Андрей Никифорович </br>(1901г-1937г)</td>
+	  <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalova_A.A.jpg" alt="2" />Шабалова(жена) Афонасия Андреевна </br>(1903г-1956г)</td>
+	   <td  colspan="1" align="center"></td>
+		<td  colspan="1" align="center"></td>
+		<td  colspan="1" align="center"></td>
+          </tr>
+<tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+ 
+  <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/eyes.jpg" alt="3"/>Ольхов Вячеслав Алексеевич</td>
+   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Olhova_M.V.jpg" alt="3"/>Ольхова(Каракчаева) Мария Васильевна</br>14.04.1920г-13.08.2012 </td> 
+    <td  colspan="1" align="center"></td>
+     <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalova_G.A.jpg" alt="3" />Шабалова Галина Андреевна</br>г. Прокопьевск Кемеровская область </td>
+	  <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Dvoyurodnye ded&baba.jpg" alt="3" />Шабалов Юрий Андреевич (1932г-2010г)</br>Шабалова(жена) Наталья Тимофеевна (1932г-2009г) </td>
+	   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Ded Shabalov N.A.jpg" alt="4" />Шабалов Николай Андреевич </br>(1928г-1959г)</td>
+		<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Babushka_Shabalova_M.P_ papa(S.N)&sister.jpg" alt="5" />Шабалова(Сидорова) Мария Прокопьева </br>(1926г-1975г)</td>  
+		<td  colspan="1" align="center"></td>
+          </tr>
+		  <tr>
+		  <td  colspan="1" align="center"></td>
+		  <td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Murachova_A.G.jpg" alt="3" />Мурачёва(Каракчаева) Антонина Григорьевна</td>
+<td  colspan="1" align="center"></td>
+ <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Karakchaev_P.N.jpg" alt="3" />Каракчаев Павел Николаевич</td>
+  <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/W.jpg" alt="3" />Ушакова(жена) Галина Михайловна</td>
+   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Karakchaev_G.A.jpg" alt="3" />Каракчаев Генадий Андреевич</br>(24.05.1946г-19.11.2000г)</td>
+	<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Olhov_N.V.jpg" alt="3" />Ольхов Николай Вячеславович</br>(24.12.1960г-1993г)</td>
+     <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalova(Olhova)_F.V.jpg" alt="3" />Шабалова(Ольхова) Фаина Вячеславовна</td>
+      <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalov_S.N.jpg" alt="3" />Шабалов Сергей Николаевич</td>
+	   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Porubova(Shabalova)_T.N.jpg" alt="3" />Порубова(Шабалова) Татьяна Николаевна</br>(10.06.1959г-3.10.2021г) </td>
+		<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Porubov _S.R.jpg" alt="3" />Порубов Сергей Романович</td>
+           </tr>
+		   <tr>
+<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Tarasov_A.A.jpg" alt="3" />Тарасов Андрей Анатольевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Tarasov_V.A.jpg" alt="3" />Тарасов Виктор Анатольевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Emanuilova(Murachova)_N.S.jpg" alt="3" />Эмануилова(Мурачёва) Анастасия Сергеевна</td>
+ <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Karakchaev_S.P.jpg" alt="3" />Каракчаев Сергей Павлович</td>
+ <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Karakchaev_A.P.jpg" alt="3" />Каракчаев Андрей Павлович</td>
+  <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/W.jpg" alt="3" />Ушаков Евгений Михайлович</td>
+   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/M.jpg" alt="3" />Ушаков Александр Михайлович</td>
+	<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Chernysh(Olhova)_E.N.jpg" alt="3" />Черныш(Ольхова) Елена Николаевна</td>
+     <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalov_A.S.jpg" alt="3" />Шабалов Александр Сергеевич</td>
+      <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Shabalov_D.S.jpg" alt="3" />Шабалов Денис Сергеевич</td>
+	   <td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Gurina(Porubova)_D.S.jpg" alt="3" />Гурина(Порубова) Дина Сергеевна</td>
+		<td  colspan="1" align="center"><img class="clickable-image" src="img/foto/Porubov_D.S.jpg" alt="3" />Порубов Дмитрий Сергеевич</td>
+           </tr>
+		  
+		  
+ </tbody>
+ </table>
+ </div>
+<script>
+  const images = document.querySelectorAll('.clickable-image');
+
+  // Создаём оверлей (затемнение)
+  const overlay = document.createElement('div');
+  overlay.classList.add('modal-overlay');
+  const overlayImg = document.createElement('img');
+  overlay.appendChild(overlayImg);
+  document.body.appendChild(overlay);
+
+  images.forEach(img => {
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      overlayImg.src = this.src;
+      overlay.classList.add('active');
+      overlayImg.classList.add('zoomed');
+
+      // Центрируем изображение
+      overlayImg.style.objectFit = 'contain';
+    });
+  });
+
+  // Закрытие при клике на оверлей
+  overlay.addEventListener('click', () => {
+    overlay.classList.remove('active');
+  });
+</script>
+ </body>
+</html>
