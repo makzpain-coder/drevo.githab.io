@@ -1,4 +1,84 @@
-/* === ШРИФТ ДЛЯ ВСЕЙ ТАБЛИЦЫ === */
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Родовое Древо</title>
+<style type="text/css">
+body {
+    background-color: #9370DB;
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPEhziQB7jwOYTe9eZTW5lByI78uCvnRbRhMlGZFEUiB9-ozc65bcJ1NNaHh-YNP1u9MJ_K_hSEBHVMRv989Dx1-9bxFUtu0zG8ZBJdf6SZNkr3Jl_t_Mxs8O-RukNbVrkiE2qIsimoMBmQS5-J1emk=w1280-h720-s-no-gm?authuser=0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .clickable-image {
+    width: 70%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+  }
+
+  /* Модальное затемнение */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Увеличенное изображение */
+  .modal-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .modal-overlay img.zoomed {
+    transform: scale(1);
+  }
+  
+    
+.bordered-blue {
+  border: 3px solid #007BFF;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.bordered-red {
+  border: 3px solid #DC3545;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+ /* === ШРИФТ ДЛЯ ВСЕЙ ТАБЛИЦЫ === */
 #table,
 #table td,
 #table th {
@@ -91,3 +171,229 @@ table a:visited::before {
     padding: 12px 16px;
   }
 }
+
+</style>
+
+ </head>
+ <body> 
+ 
+ 
+ <div id="table">
+
+ <table style="color: #FFFF00; width: 100%;" border="0">
+ <tbody>
+   
+ <tr>
+<td colspan="28" align="center">Родовое Древо</td>
+   </tr>
+   
+  <tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczO0kx7CUIHEGKZBLbb4Is7oN5synNZxIgg2qhygh7czo3V7FkTuW8KASPvZ41c0FIfHQr2gVBRd0sED-eC-tB2StGlMIpwvt85-mfnzPHHrd_e6s41Izx8oRQUIcmHDhKcIP5OYIwz9apoAVxOySjRC=w924-h924-s-no-gm?authuser=0" alt="1" />Шабалов Андрей Никифорович </br>(1901г-1937г)</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczO5fj6-8YUivN_Zfs_9ObHaHA1IpBX4k11rBIIpd45L1JSpqVPLNVf0qLoWixHD97eeqYJhhn8zFupfvPLkq5pegv-bHo6QaA0XnzGgyl3UfgYlITUk2P7yl5NjQPDBoej9-SS2S9hA3dIss9hvb3wj=w924-h924-s-no-gm?authuser=0" alt="2" />Шабалова(жена) Афонасия Андреевна </br>(1903г-1956г)</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+ </tr>
+
+  <tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOE-e68KyIEKwysgmsAid77J--qjsO4uedmxQOQc10wD8a7RdkBvWBpALARMoDI3pWmWlqdqljA58uVFIOGkv-hTgv_e8JUVg6Fw_TQxTjVBdcndHNMUyBx1C-V7pp_6kV5bLHmPvywFnJzhD_ewUKq=w924-h924-s-no-gm?authuser=0" alt="3" />Ольхов Вячеслав Алексеевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPGZ8Efkmh4_e-vtHqCTb1ffiuZeZKiVKnRjaKu40RL77o1Xn0ftpV5Jv1lnCcO9aSc5LQa-o6oArE6y5ulN216B8VHnaQgmO33UwLPneJpyfWCK83iR8YBWF2S_ZblceXiuPVA1_33E1H2_ezfRb7-=w924-h924-s-no-gm?authuser=0" alt="3"/>Ольхова(Каракчаева) Мария Васильевна</br>14.04.1920г-13.08.2012 </td> 
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPXdNm_GaIZHYR4itqpopejJRn-xDIL5bXoCxN518gbjbp4-nwgzGJl-4y2PbfDOQaLkv5cR9bJnZ5QWZ6PWl44aLH7VjcJU_jn8h_Q4lBDNWiJDBmZaPyGZhr7M5ywjBy8Y1sXyU4ZDDvlz4BoUG_5=w924-h924-s-no-gm?authuser=0" alt="3" />Шабалов Юрий Андреевич (1932г-2010г)</br>Шабалова(жена) Наталья Тимофеевна (1932г-2009г) </td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczNLgYwYxVFScPdwYwRiKSjPHSq8YFAVGuBy314DC_fcnMvfo-b6dBq9sh_cmzLbhZzTsgOUtYrYwk0GYF5QMu3u8D8zXOnabR771uKZeC1flRQIiMKPimxdkxFm-d7jINnL7CQKNYs8dIm-351zX9vB=w924-h924-s-no-gm?authuser=0" alt="4" />Шабалов Николай Андреевич </br>(1928г-1959г)</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczM4r4XPqn4FpaWyhHAZHF12XRJLIYdxBcSeMH8xWFRkx0S4weTDfMXMqsKDCa3MsHW5ZogYCiDrk2jG2wUe0Aw0iGqRNosWj5ohCZrZoflt-GXv8yccqicoWsOhq6V5-Haq58OcHYqHteexGWfNS_SA=w924-h924-s-no-gm?authuser=0" alt="5" />Шабалова(Сидорова) Мария Прокопьева </br>(1926г-1975г)</td>  
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczNbfzoCkuuTpAvH7NnpI7oeiBvSFQBcYSY-61SQQ-h_SEH514R7eesSQfXTMQ7sRPRZ7w1hY6MkD_W1vjX5TYG6aONYiz6tVcIQv89ORt-9wuui23o6eIwPbrkJyuoNfSeRg6G4QoIpbho5BfMkuRbw=w924-h924-s-no-gm?authuser=0" alt="3" />Шабалова Галина Андреевна</br>г. Прокопьевск Кемеровская область </td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+  </tr>
+  
+  <tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPU8UXboRk0_AM_a7-T54B5CGwa9S7w_bORvL78E2vg0Kh-HkuCoqOy-TcjIWY_V2M2LZvDVZJTHvSwEtp1Vhjsjlj0CS15CfhSxUCbfAR1zhuPMJfgVioibWbX0jdRm6NqwWrpxnzp-Audm89xwPK5=w924-h924-s-no-gm?authuser=0" alt="3" />Мурачёва(Каракчаева) Антонина Григорьевна</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczP_JvEUUHNcDoFwQtpET3oP445pTn-atBYAnEjNgmzLQaH7lBCKaMhKefhABCbuW1b5LLb3uj0L0kTMTf-ojDVNoOQ_AuprVPZFTIJWdkSVoEEvJi634qrjuYAfWT7qdGsPQoqcm2nitcRp6D7261L9=w924-h924-s-no-gm?authuser=0" alt="3" />Каракчаев Павел Николаевич</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Ушакова(жена) Галина Михайловна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMdH2mdkmublRmLboiFbuHvkKQHH8DZY9Qz6OEA-7yxhuvz38GKg5MhFGD8YSv0LtkUikdch6KzZzvE_o_F5SDG7wc6deKyL6-im9aU3MCOH72XzT-UapwGX8OK3uliowmPBog0vgu1_PDdxL3G2P19=w924-h924-s-no-gm?authuser=0" alt="3" />Каракчаев Генадий Андреевич</br>(24.05.1946г-19.11.2000г)</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPWmqeiI5RXMVcbJjRg_r-DmilOigtQ0z1Gz387mT_pSHJD4sH_rw0UGF5v4R6Ey39qD-esZTAaD51rNi2BM9Xix2xNHDYMzwToH8itERjdFZY8XPO_UOnNBBLB4sebxLEFQ1faw4khmGAj5RA-qXPN=w924-h924-s-no-gm?authuser=0" alt="3" />Ольхов Николай Вячеславович</br>(24.12.1960г-1993г)</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczP9HHNX7ExxJZlAKKYN3GG349QIGHVgf52Cxn7heuqNw4hiZXVRxSdK2AewLgKPrEr36PubGJ4-BTzPZ-jnasV8msuq-YzprDmPHnMccEkSh0_59dbP456zbNIfkrE1T54pFKQlF9z306vwygpkN4pj=w924-h924-s-no-gm?authuser=0" alt="3" />Шабалова(Ольхова) Фаина Вячеславовна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOP9GmXqKRZj9VNyFWiHe47-Hhc4KQs-wEaZyBSM80KWqXvQmtCjFZZNgpGY8tVmTIehNaMWSAdnlo834DKI9xoEiGKdChPvpHW3BJPEOTpI9N2NzL-X8oWbsgVMMrHoDAyhA0pSjU__biVUIgxa-9M=w924-h924-s-no-gm?authuser=0" alt="3" />Шабалов Сергей Николаевич</Br><a href="https://ok.ru/profile/538465403004">OK.ru</a></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOdfjBGJzeZe2kxLn5rOT2yYWcZTwAwDAplGAncJwpo63C8F_8e9bGfgFoqdRG-aC5PzeFCXJVxD02fGLiDo38EYQ7a0gVEtJl5aZvIV3NYuqWVGnREatDpFqSKd3ute5QD8ZBABwrhsfmXDV9ebLCq=w924-h924-s-no-gm?authuser=0" alt="3" />Порубова(Шабалова) Татьяна Николаевна</br>(10.06.1959г-3.10.2021г) </td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczM0rF639ZZ7FJPohXcY7IGZFL6UI3SxJn0EOHGFEjeRxIwF303Oj06kIw1BrLikHAYRNqtw_DgOnbkt-mr3Va7yQvRODy5RlGc1xqMMHgl8jfAkuX73FqeFGqVrkK-mW1yqvJ4ejuWx0UoPVvD67CPs=w924-h924-s-no-gm?authuser=0" alt="3" />Порубов Сергей Романович</td>
+<td  colspan="1" align="center"></td>
+ </tr>
+ 
+ <tr>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMPaSLtkmeZpXkHAlq7URg3Sv1MiGoHS6lJRNQl1GVxsvgQokW5Zrp-Cy3iQikSNHm9wf7xSama8ITekxznIE6gKVGM-Nd07Dc6RFDdvurzpC0kWCpYoQESDYpE21j7lhcPKGwwzshjzspMoL1OOkOP=w924-h924-s-no-gm?authuser=0" alt="3" />Тарасов Андрей Анатольевич</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPn6bRy22SHRpYuxYpgru_xvBp7m9TjvGTwBw0S1DS5vmqxtpVq5au2sCAN1JG4mH2cITY66ved-NNK68AkcztSq_0zlbooee8tPxTo2KfxlbR9tLbofajhjFQucFzob5sWcupKeZC382TtRkhvehle=w924-h924-s-no-gm?authuser=0" alt="3" />Тарасов Виктор Анатольевич</br><a href="https://www.litres.ru/book/viktor-tarasov-slish/monografiya-v-fotografiyah-zhizn-tarasovoy-slishinoy-63414552/">Биография</a></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMvv1PjLf6kb3Aj_WvrAKTLF6vbqlhk_EdW_6EN89g3XnoYfQr-j00AQps27pd43Yq3OVcfEluTpZ9uBnc1yq2bpChnRb43t7iBqoJaj8eGXwCoPKhEhaPCtMluCLqjfATQZM3UycDonG1ybJXMt1LC=w924-h924-s-no-gm?authuser=0" alt="3" />Эмануилова(Мурачёва) Анастасия Сергеевна</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMOce1j-7KahxrlyPSNW-Mj_3r377chWMhLdMwtA_EHFivd5Uj4bAyEOM-lQb3nDAkrvOYwZ8nS-OeWcWY2KGiDH-N4FfNIzWnDGaJoztQk39X_QuQO2FkICR3v6KUq4ALvFIvh5QNFv3FGwuggl_1d=w924-h924-s-no-gm?authuser=0" alt="3" />Каракчаев Сергей Павлович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOE-e68KyIEKwysgmsAid77J--qjsO4uedmxQOQc10wD8a7RdkBvWBpALARMoDI3pWmWlqdqljA58uVFIOGkv-hTgv_e8JUVg6Fw_TQxTjVBdcndHNMUyBx1C-V7pp_6kV5bLHmPvywFnJzhD_ewUKq=w924-h924-s-no-gm?authuser=0" alt="3" />Каракчаев Андрей Павлович</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Ушаков Евгений Михайлович</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOu_32s1VWnL9dbIGh-mDsSXCuk1QThGR4ye4Udo0YOachKPMhkAg0a9hMufqWQVHOdydbJ5KvjCFZHmw1DoIN9mxBB8b4Og80yZde4LDR1uwBJ0tEpTxfeEqJBC1FRMrUgQ5cYFvJalzQ3sTiuDo4q=w873-h873-s-no-gm?authuser=0" alt="3" />Ушаков Александр Михайлович</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczNNdaA_Ot1cVin-bF-gwJUnbqRyGaYS6THewNIshX4bhs0d7dIArhe-F20EX9snpDiGCmjvKylmg0yWB-OrUf6ConWGgyUI4Y9O9S3uwEe9GCMGmwH5MorZMx-h2-e__dwstdg7ZuaNj859JQMgYfS1=w924-h924-s-no-gm?authuser=0" alt="3" />Черныш(Ольхова) Елена Николаевна</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczM2HPaAVDnsGyhEkWxXgOGo2iOm4yRMQ4xOS00XlJqaA0tp9dOr9a5lQbe0-b2K_FHKXKbk78mcbUDri6VuAgCxxqFUk43wKjomqLkvCYjRt838sMWhLocbbX7ZDViDhkETlp8TelHm4afpttIKy-ew=w924-h924-s-no-gm?authuser=0" alt="3" />Шабалов Александр Сергеевич</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMfR-3P2XVoa1p7N67eLqLO6CX5hSsgC1RTyADqhUtoABn5BoB-Ok5wW2y2TFV91VbgKqmEEQdDQ5imqQ-AQmJMsYAdqGVQ2KHHfAlb0xcyEAhGyTNecqOen1vAC2owAar4sOjZCW77bXkOZKo_655b=w873-h873-s-no-gm?authuser=0" alt="3" " alt="3" />Шабалов Денис Сергеевич</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOqvi7GP8AZKSI1jYcP2U3liQBeC28ykayAKvQDLe0hxbMQinPykABtbwbwW83waf7xN5amvfbTDYLPLiZHBG6Ee97eniMj6OEJ8v-tI_V6q5CDz0JaKAQs5OEdlJm9S5UMivnx70AXKI_o0U7L7MVs=w924-h924-s-no-gm?authuser=0" alt="3" />Гурина(Порубова) Дина Сергеевна</td>
+<td  colspan="1" align="center"></td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOtCXqwTyMhqSY8C59ndPscKX9Y0FZI1FXRYE8YUaxu7ka4YeF8fa4JE42W4mvWS7T1PorW5N7pYy939XJmLCUGGbRH7N8CRlOHHHcijC-BEgR6eLh3wVbtA2HVlL9dsVxATmij-OLU-Vfz3AwD0Xct=w924-h924-s-no-gm?authuser=0" alt="3" />Порубов Дмитрий Сергеевич</td>
+ </tr>
+ 
+ <tr>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Тарасова ? Андреевна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Тарасова ? Андреевна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOKRGtlKivKbBIh3_AfxorSenkgsymciOWE5w1pyZNNrIyXJJz6IblHnZbbA4DkSkZo4p1C_kXVMQ-nHyubY-gY779YsJTVdhtZyGEkXWp8FRpBseFBY9YbTWLNSa8wQPLUfoJtzBHZt9JovmzcMwRS=w913-h913-s-no-gm?authuser=0" alt="3" />Тарасов Алина Викторовна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPC5Efz6QmfBnF3lm3rthk6eVLU4loQ4tk5yelCP4jSm5RN-xkpDFqyNf4aXUijhXBNuf0gcWVYp9jV2gRvrsIJOEZG4nuAL7TgtVJoRts_lZchTUGjED2XwOo6tYK7cCSeDmxTlJhwHxO22vafRki9=w873-h873-s-no-gm?authuser=0" alt="3" />Тарасов Денис Викторович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Эмануилова Катерина Александровна </td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Эмануилова Дарья Александровна </td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Эмануилова Олег Дмитриевич </td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczP-ceV-GtItdAPYWE91Rr1gLOibs-PKjtgEkWrKFBrjTFaCvZYglhyfG4M1OFXae1vv_BDLxxM4iNU5dVQQrdQl_wFIMDBEAnb0KNTsHN22WVjiG_JNpVBuSUuJvo5qwhj5k15dsGpqjOtkh1fZHXl8=w873-h873-s-no-gm?authuser=0" alt="3" />Каракчаева Дарья Сергеевна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOE-e68KyIEKwysgmsAid77J--qjsO4uedmxQOQc10wD8a7RdkBvWBpALARMoDI3pWmWlqdqljA58uVFIOGkv-hTgv_e8JUVg6Fw_TQxTjVBdcndHNMUyBx1C-V7pp_6kV5bLHmPvywFnJzhD_ewUKq=w924-h924-s-no-gm?authuser=0" alt="3" />Каракчаев Вадим Андреевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOE-e68KyIEKwysgmsAid77J--qjsO4uedmxQOQc10wD8a7RdkBvWBpALARMoDI3pWmWlqdqljA58uVFIOGkv-hTgv_e8JUVg6Fw_TQxTjVBdcndHNMUyBx1C-V7pp_6kV5bLHmPvywFnJzhD_ewUKq=w924-h924-s-no-gm?authuser=0" alt="3" />Ушаков Генадий Евгеньевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczNI4v3aThgy_L52MxrfQ-wE5PZ1z9zOIFWU7lOIgbmtz7UYv-3FJzaH3s3Qtkx1y9HNsScHKCuvBS1NYvDgpb44HZC04pQr-xoZsVS88TUKYcUrWpGGZont7_81AQOI3fiQCmJjnswj609-ayamk5Ia=w873-h873-s-no-gm?authuser=0" alt="3" />Ушаков Степан Евгеньевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMDKZKctJ3UEKV6D38W0itP8YnL8Wv9rTtukrcuKSd53Zs9HPkRS8msfWQVsYtdkwQNDnA5V4RLeDyoRA55VrWB-bi972NIhYEd4EFw2K5L0PsVWs9eTDLYCckupob6zRzEBdL8RTd0zCOOO-DpR3MG=w873-h873-s-no-gm?authuser=0" alt="3" />Ушаков Михаил Евгеньевич</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczO-khKvp2hbqC4lLpBCdAIuTFfgoloG46QbJHSfs1LUUb7HOs-fbZSlGaQ6_eAXJcYmOINSh8P3DU0JE_snb4fBMd62ZcEP29dNq18CavoCQzrSgEX6uZSYoKh08lsc2_7rlYLbGZ4f1Rc0u2VcqONo=w873-h873-s-no-gm?authuser=0" alt="3" />Ушаков Леонид Александрович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Ольхов Денис ?</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Черныш ? ?</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Черныш ? ?</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMryTAKsL1qMprMYwPxK_7jaR5lCfUpD8tO21SnfVyjZnjqvA1R3Qkpvnr4K0EC6EUV4-h4ycN54pju300Mtaa26Khi7bCEt2NleBP4w2NoUi5zufZG_72NSgUFy1JcfEidci2-Fm95NJjX5AeFlBA4=w924-h924-s-no-gm?authuser=0" alt="3" />Черныш ? ?</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczOPlqDeyEhwmTw_m4O5WnPIPjGPd9LeRZJ1Zl-8204Z4fuxY7NRH8qvrK_icNMFI74Oy0ylT_3gCw9fz9_oU5JVopJ_WNDBI9Q044Gua2sqFp3FWjcZFpf06lLfqKusXSnaLfnNzo7S3UNJF8wZr_y7=w873-h873-s-no-gm?authuser=0" alt="3" />Черныш ? ?</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczM8bgMm4sFWchwclY8jtaZVgPt8CmvomqD7U2SU-e1zimXlUbh0-Nm6rFpYdztQySzrJ8r5S0gNk8Acp8kOuTgkJq_Uc7jW2rtfsKeX5xmdSpEhxx6EW93hIyE0mYSGWik-Y1ITtwICtrVo0QkHQdLA=w873-h873-s-no-gm?authuser=0" alt="3" />Шабалов Никта Александрович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczONOXlIysyr_mJ49hMCjwOfULijW_d34tLDrlACUJNG8j0MevOkS5vJZ5_XG3Bln7_5fkFmKZMzwhu7UM38G_nongpi3cHoWHosV9C8jjZid2RH3ib7NFmMQr5TGkdIRCDlaNyxVUOc1HRhHOWigF-R=w873-h873-s-no-gm?authuser=0" alt="3" />Шабалов Иван Александрович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczNiiugMWKl7pLYEbDhnCwI3b2L0Owlr6vi1tNMnAUbzKDdgnDh6CA0ksn6Ixc7KQ5FYE0RdEqOTYjBUyT6xnVVwZH7Th9g1sTJd8jcBksl8jSXYRboxBTowBBZO93xLyKtBCLZ89mvxSGZ2FJXpoY-N=w873-h873-s-no-gm?authuser=0" alt="3" />Шабалов Алексей Александрович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMCystLhC9LR7LXOkt-SnrXu_5DFAdvkc8jiBXOUq80emjSYYrBdUnyb4yg29Iw5agVD_nB1D-rHwAEY71Dpnf3HgDtThqHEd5h8nnydfQEMvc0SGktdP4xc7LgYD4meffH6MAG0wZllt5uOVOfL8ND=w873-h873-s-no-gm?authuser=0" alt="3" />Шабалов Юрий Денисович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMj46tb_F58BX-o3H2nolG5D-r0xy0SPWyZjNu2k8CRXfNeV9QD0iiyjSI85dGTGeWpQXK6izgxRU-HBw0AkQK6bZ5XEqdmnR-5IqKQJBJnxrg4ge-0Lx8NiI0rQd136vmRFBnWdkFD5Ghq4tbjHh3D=w873-h873-s-no-gm?authuser=0" alt="3" />Шабалов Софья Денисовна</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczPgstkbPtMPn6bKuqzR8n46y7Y8Xu9RMbAXnXaTtkIpTc7daC9UC2h2mS4vzP3fhxKi37w_RCSi0QKvt988UspcNpQl_qBkuK3yu_cPfbAiphlPx5MewJK20yeVD0M5rD37xuunBE-hwMoy4QiOYZnm=w913-h913-s-no-gm?authuser=0" alt="3" />Зубенко Родион Денисович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMRt6pEN_3HsCFc2tD1aGbKNXvkUWfWUglq_J7IQntXosGiH40Cha3Aiva_x9V0cVXqCmqgWD53T9VyeoxPqeik3VWmUwtEjQtevsAWhe2qSpBYWRafYyNcxMf2nbi_ovm5sGtq-ALI08g4xGb-Ks32=w655-h873-s-no-gm?authuser=0" alt="3" />Зубенко Матвей Денисович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Гурина Тимур Владимирович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczMuSU6YFT4uo0E5jTLLa76huNo6eWMUaiu4QiXh0ZhPre1xoeX92dCGcJJ3HSXHWCrSuvyfbkkA8JRvJnm5b1YgsZUnQrtxQY3Q3OY1wUhMqBE418EIR-EoaBbyPN7o3NNrUC61mIazGXpgabMw81fH=w924-h924-s-no-gm?authuser=0" alt="3" />Гурина Сергей Владимирович</td>
+<td  colspan="1" align="center"><img class="clickable-image" src="https://lh3.googleusercontent.com/pw/AP1GczO0uCzTcxHPJw8RaVDkryswQtkZ443k3wtSIxtqe2MHb7zTGHHlAaSyeaWxHRc_jIJLz6xFvSD_leexGi_sMbQsTusBXO_7P_DIVsz68cu1J_xOHmzor9zltbgAkIoiJsBhZ9qKZrynafwh5NEcJjBA=w873-h873-s-no-gm?authuser=0" alt="3" />Порубов Роман Дмитриевич</td>
+ </tr> 
+
+
+ <tr>
+<td colspan="28" align="center"></br></br></br>
+<button onclick="window.print()" style="
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+">
+    📄 Сохранить родословную как PDF
+</button></td>
+   </tr>
+   
+  <tr>
+
+
+
+ </tbody>
+ </table>
+ </div>
+<script>
+  const images = document.querySelectorAll('.clickable-image');
+
+  // Создаём оверлей (затемнение)
+  const overlay = document.createElement('div');
+  overlay.classList.add('modal-overlay');
+  const overlayImg = document.createElement('img');
+  overlay.appendChild(overlayImg);
+  document.body.appendChild(overlay);
+
+  images.forEach(img => {
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      overlayImg.src = this.src;
+      overlay.classList.add('active');
+      overlayImg.classList.add('zoomed');
+
+      // Центрируем изображение
+      overlayImg.style.objectFit = 'contain';
+    });
+  });
+
+  // Закрытие при клике на оверлей
+  overlay.addEventListener('click', () => {
+    overlay.classList.remove('active');
+  });
+ 
+</script>
+ </body>
+</html>
