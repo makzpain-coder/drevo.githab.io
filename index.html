@@ -598,8 +598,7 @@ body {
       </p>
 </div>
 
-  
-  
+   
 </div>
   <!-- Модальное окно (вне .family-tree) -->
 <div class="modal-overlay">
@@ -608,10 +607,7 @@ body {
   <div class="modal-caption"></div>
 </div>
 
-
 <!--    ------------     -->
-
-
 
   <!-- Скрипт в конце body -->
   <script>
@@ -674,33 +670,6 @@ modalClose.addEventListener('click', () => {
   }, 300);
 });
 
-  </script>
-
-  <script>
-  document.getElementById('save-pdf').addEventListener('click', () => {
-    const { jsPDF } = window.jspdf;
-    const element = document.querySelector('.family-tree'); // часть, которую сохраняем
-
-    html2canvas(element, {
-      scale: 2, // лучше качество
-      useCORS: true, // поддержка изображений с других доменов
-      logging: false,
-      backgroundColor: '#9370DB' // фон, как у body
-    }).then(canvas => {
-      const imgData = canvas.toDataURL('image/jpeg', 0.9);
-      const pdf = new jsPDF('l', 'mm', 'a4'); // альбомная ориентация, A4
-      const width = pdf.internal.pageSize.getWidth();
-      const height = (canvas.height * width) / canvas.width;
-
-      pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
-      pdf.save('Родовое_древо.pdf');
-    }).catch(err => {
-      console.error('Ошибка при создании PDF:', err);
-      alert('Не удалось сохранить PDF. Попробуйте снова.');
-    });
-  });
-</script>
-
-  
+  </script>  
 </body>
 </html>
