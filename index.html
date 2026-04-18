@@ -265,6 +265,45 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
 }
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.modal-nav:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Скрытие стрелок, если фото одно */
+.modal-nav.hidden {
+  display: none;
+}
+
 </style>
 
  </head>
@@ -599,12 +638,21 @@ body {
   
 </div>
   <!-- Модальное окно (вне .family-tree) -->
-<div class="modal-overlay">
-  <span class="modal-close">&times;</span>
-  <img src="" alt="" />
-  <div class="modal-caption"></div>
-</div>
+<div class="modal-overlay" id="modalOverlay">
+  <span class="modal-close" id="modalClose">&times;</span>
 
+  <!-- Стрелка "Назад" -->
+  <button class="modal-nav prev" id="modalPrev">&#10094;</button>
+
+  <!-- Стрелка "Вперёд" -->
+  <button class="modal-nav next" id="modalNext">&#10095;</button>
+
+  <!-- Изображение -->
+  <img id="modalImage" src="" alt="Увеличенное фото">
+
+  <!-- Подпись -->
+  <div class="modal-caption" id="modalCaption"></div>
+</div>
 
 <!--    ------------     -->
 
@@ -672,6 +720,72 @@ modalClose.addEventListener('click', () => {
 });
 
   </script>
-  
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const clickableImages = document.querySelectorAll('.clickable-image');
+    const modal = document.getElementById('modalOverlay');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+    const modalClose = document.getElementById('modalClose');
+    const modalPrev = document.getElementById('modalPrev');
+    const modalNext = document.getElementById('modalNext');
+
+    let imageIndex = 0;
+    let imageArray = [];
+
+    function updateImageArray() {
+      imageArray = Array.from(clickableImages);
+    }
+
+    if (clickableImages.length === 0) {
+      console.warn("Нет элементов с классом .clickable-image");
+      return;
+    }
+
+    clickableImages.forEach((img, index) => {
+      img.addEventListener('click', (e) => {
+        e.preventDefault();
+        updateImageArray();
+        imageIndex = imageArray.indexOf(img);
+
+        modalImg.src = img.src;
+        modalCaption.textContent = img.alt || "";
+
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    modalClose.addEventListener('click', () => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+
+    modalPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      imageIndex = (imageIndex - 1 + imageArray.length) % imageArray.length;
+      modalImg.src = imageArray[imageIndex].src;
+      modalCaption.textContent = imageArray[imageIndex].alt || "";
+    });
+
+    modalNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      imageIndex = (imageIndex + 1) % imageArray.length;
+      modalImg.src = imageArray[imageIndex].src;
+      modalCaption.textContent = imageArray[imageIndex].alt || "";
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  });
+</script>
+
+
+ 
 </body>
 </html>
