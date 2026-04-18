@@ -252,9 +252,9 @@ body {
 
 .welcome-message {
   text-align: center;
-  padding: 20px;
-  width: 100%;         /* Блок займёт 80% ширины родителя */
-  margin: 0 auto;     /* Центрирование по горизонтали */
+  padding: 16px 20px;
+  max-width: 1600px;
+  margin: 20px auto 40px; /* Отступ снизу — от текста до древа */
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   backdrop-filter: blur(5px);
@@ -264,8 +264,11 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
+  width: 90%; /* Адаптивная ширина */
+  position: relative; /* На случай, если будешь добавлять иконки */
+  z-index: 10; /* Чтобы был выше других элементов, если нужно */
 }
-
+ 
 .modal-nav {
   position: absolute;
   top: 50%;
@@ -309,15 +312,13 @@ body {
  </head>
  <body> 
 
-  <div class="welcome-message">
-  <p>
-    <strong>Приветствую всех родных и посетителей, зашедших на сайт Родовое Древо!<br> Если вы видите информацию о себе и у вас есть пожелания по её дополнению или замечанию об ошибке, 
-    пожалуйста, свяжитесь <a href="https://max.ru/join/ydqzfGWKQVYhTdlV0_UYCt1x8i4Jsa00vKiaupPgpgo" target="_blank">в канале MAX</a></h2></strong>
-  </p>
 
-
-     
-  
+<div class="welcome-message">
+  <strong>
+    🌿 <span style="font-size: 1.1em;">Приветствую всех родных и посетителей, зашедших на сайт Родовое Древо!</span><br>
+    Если вы видите информацию о себе и у вас есть пожелания по её дополнению или замечанию об ошибке, 
+    пожалуйста, свяжитесь <a href="https://max.ru/join/ydqzfGWKQVYhTdlV0_UYCt1x8i4Jsa00vKiaupPgpgo" target="_blank">в канале MAX</a>
+  </strong>
 </div>
 
 <div class="container">
