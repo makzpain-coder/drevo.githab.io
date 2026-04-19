@@ -195,26 +195,30 @@ body {
 .welcome-message {
   text-align: center;
   padding: 16px 20px;
-  max-width: 1600px;
+  max-width: 90vw; /* Важно: 90% от ширины экрана, а не родителя */
   margin: 20px auto 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   backdrop-filter: blur(5px);
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: clamp(14px, 4vw, 16px); /* Адаптивный размер шрифта */
   line-height: 1.6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  width: 90%;
   position: relative;
   z-index: 10;
 
   /* Ключевые исправления: */
-  overflow-wrap: break-word;    /* Переносит длинные строки */
-  word-wrap: break-word;        /* Альтернатива для старых браузеров */
-  word-break: break-word;       /* Принудительный перенос, если нужно */
-  hyphens: auto;                /* Опционально — перенос с дефисами */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+
+  /* Гарантируем, что блок не выйдет за пределы экрана */
+  width: auto;
+  min-width: 0; /* Позволяет flex/grid обрезать блок */
+  overflow: hidden; /* На случай, если что-то "вылезет" */
 }
 
 .modal-nav {
