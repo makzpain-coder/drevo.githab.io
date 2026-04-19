@@ -25,17 +25,19 @@
   </strong>
 </div>
 </div>
+
 <div class="container">
   <div class="family-tree">
   <!-- Поколение 1 -->
+  
 <div class="tree-node gen1" style="grid-column: 20; grid-row: 1;">
   <img src="https://lh3.googleusercontent.com/pw/AP1GczO0kx7CUIHEGKZBLbb4Is7oN5synNZxIgg2qhygh7czo3V7FkTuW8KASPvZ41c0FIfHQr2gVBRd0sED-eC-tB2StGlMIpwvt85-mfnzPHHrd_e6s41Izx8oRQUIcmHDhKcIP5OYIwz9apoAVxOySjRC=w924-h924-s-no-gm?authuser=0" class="clickable-image" alt="Шабалов Андрей Никифорович">
   <div class="name">
-    Шабалов Андрей Никифорович<br>
-    <small>1901–1937</small>
-    <a href="https://yandex.ru/maps/?ll=52.35931,59.05386&z=15&mode=search&text=59.05386%2052.35931" target="_blank">
+  Шабалов Андрей Никифорович<br>
+  <small>1901–1937</small>
+  <a href="https://yandex.ru/maps/?ll=52.35931,59.05386&z=15&mode=search&text=59.05386%2052.35931" target="_blank">
       📍 Посмотреть место на карте
-    </a>
+  </a>
   </div>
 </div>
 
@@ -342,24 +344,20 @@
   </div>
   
 </div>
-	<button onclick="toPDF()">Сохранить в PDF</button>
   <!-- Модальное окно (вне .family-tree) -->
-<div class="modal-overlay" id="modalOverlay">
+<div id="modalOverlay">
   <span class="modal-close" id="modalClose">&times;</span>
-
-  <!-- Стрелка "Назад" -->
   <button class="modal-nav prev" id="modalPrev">&#10094;</button>
 
-  <!-- Стрелка "Вперёд" -->
+  <div class="modal-content">
+    <img id="modalImage" alt="Увеличенное изображение">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
   <button class="modal-nav next" id="modalNext">&#10095;</button>
-
-  <!-- Изображение -->
-  <img id="modalImage" src="" alt="Увеличенное фото">
-
-  <!-- Подпись -->
-  <div class="modal-caption" id="modalCaption"></div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
 <script src="js/script.js"></script>
 </body>
 </html>
