@@ -1,3 +1,7 @@
+
+// В начале вашего JavaScript файла
+import jsPDF from 'jspdf';
+
 document.addEventListener("DOMContentLoaded", function () {
   const clickableImages = document.querySelectorAll('.clickable-image');
   const modal = document.getElementById('modalOverlay');
@@ -100,3 +104,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Подключаем библиотеку jsPDF
+import jsPDF from 'jspdf';
+
+// Функция для сохранения в PDF
+function saveToPDF() {
+    // Создаем новый PDF документ
+    const doc = new jsPDF({
+        unit: 'mm',
+        format: [210, 297] // A4 формат
+    });
+
+    // Получаем содержимое основного контейнера
+    const content = document.querySelector('.main-content').innerHTML;
+
+    // Добавляем стили для корректного отображения
+    doc.setProperties({
+        title: 'Родовое древо',
+        subject: 'Семейное древо',
+        author: 'Генеалогический проект'
+    });
+
+    // Конвертируем HTML в PDF
+    doc.html(content, {
+        margin: 10,
+        callback: function (doc) {
+            // Сохраняем файл
+            doc.save('Родовое_древо.pdf');
+        },
+        x: 15,
+        y: 15,
+        width: 180
+    });
+}
+
+// Добавляем обработчик события
+document.getElementById('save-pdf').addEventListener('click', saveToPDF);
