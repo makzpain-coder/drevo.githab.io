@@ -1,5 +1,4 @@
-<style type="text/css">
-
+/* Общие стили */
 html, body {
   height: 100%;
   min-height: 100vh;
@@ -8,15 +7,15 @@ html, body {
 }
 
 body {
-  background-color: #9370DB !important;
-  background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMebYU5jF5E8V0svgv6eiZ9-TWXXgow01b7OMOR_lErnqpjuvEkvzDbSNYFDXtmcSa8nNC0XUQNLiGBVYm1RlrwVYmxE7Vg3TVEsHMXeyk3DEgpi4Huqbg87QCmq5fVWzqOpbz-0i8AIJbaUyaAuQL3=w1560-h877-s-no-gm?authuser=0') !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
+  background-color: #9370DB;
+  background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMebYU5jF5E8V0svgv6eiZ9-TWXXgow01b7OMOR_lErnqpjuvEkvzDbSNYFDXtmcSa8nNC0XUQNLiGBVYm1RlrwVYmxE7Vg3TVEsHMXeyk3DEgpi4Huqbg87QCmq5fVWzqOpbz-0i8AIJbaUyaAuQL3=w1560-h877-s-no-gm?authuser=0');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
+/* Семейное древо */
 .family-tree {
   display: grid;
   grid-template-columns: repeat(28, 1fr);
@@ -27,110 +26,6 @@ body {
   align-items: start;
 }
 
-.modal-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.modal-overlay[style*="flex"] {
-  opacity: 1;
-}
-
-.modal-overlay img {
-  max-width: 90vw;
-  max-height: 80vh;
-  border: 4px solid white;
-  border-radius: 12px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.modal-overlay[style*="flex"] img {
-  opacity: 1;
-}
-
-.modal-caption {
-  margin-top: 12px !important;
-  color: #FFFFFF !important;
-  font-size: 24px !important;  /* Увеличили с 18px до 24px */
-  font-weight: 500 !important;
-  text-align: center !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-  max-width: 80% !important;
-  padding: 0 20px !important;
-  white-space: pre-line !important;
-  line-height: 1.5 !important;
-  opacity: 1 !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
-  z-index: 1002 !important;
-  position: relative !important;
-  background: transparent !important;
-  font-size: clamp(18px, 4vw, 32px) !important;
-}
-
-
-.container {
-  transform-origin: top center;
-  transition: transform 0.2s ease;
-}
-
-/* Улучшенные стили для ссылок в имени */
-.name a {
-  color: #FFD700; /* Золотистый цвет — гармонирует с жёлтым текстом */
-  font-size: 13px !important;
-  text-decoration: none !important;
-  border-bottom: 1px dashed #FFD700; /* Пунктирная линия — элегантнее сплошной */
-  padding-bottom: 2px !important;
-  margin-top: 8px !important;
-  display: inline-block !important;
-  transition: all 0.3s ease !important;
-  cursor: pointer !important;
-  position: relative !important;
-  background: transparent !important;
-  outline: none !important;
-  box-shadow: none !important;
-  font-weight: 500 !important;
-  opacity: 0.9 !important;
-}
-
-/* Эффект при наведении */
-.name a:hover {
-  color: #FFFFFF !important;
-  border-bottom: 1px solid #FFFFFF !important;
-  text-shadow: 0 0 6px rgba(255, 215, 0, 0.8) !important;
-  transform: translateY(-1px) scale(1.03) !important;
-  opacity: 1 !important;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4) !important;
-}
-
-/* Иконка перед ссылкой (например, 🌍 или 🔗) — опционально */
-.name a::before {
-  content: "🔗 "; /* Можно заменить на 🌍, 📍, 🖼️ и т.д. */
-  font-size: 11px;
-  margin-right: 4px;
-  opacity: 0.8;
-}
 .tree-node {
   display: flex;
   flex-direction: column;
@@ -179,48 +74,127 @@ body {
   line-height: 1.2;
 }
 
-@media (max-width: 768px) {
-  .tree-node {
-    height: clamp(160px, 18vh, 200px);
-    max-width: 140px;
-    padding: 8px;
-  }
-  .name {
-    max-height: 60px;
-    font-size: 12px;
-  }
-  .name small {
-    font-size: 10px;
-  }
+/* Ссылки в имени */
+.name a {
+  color: #FFD700;
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 1px dashed #FFD700;
+  padding-bottom: 2px;
+  margin-top: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.9;
 }
 
+.name a:hover {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+  transform: translateY(-1px) scale(1.03);
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+.name a::before {
+  content: "🔗 ";
+  font-size: 11px;
+  margin-right: 4px;
+  opacity: 0.8;
+}
+
+/* Приветственное сообщение */
 .welcome-message {
   text-align: center;
   padding: 16px 20px;
-  max-width: 90vw; /* Важно: 90% от ширины экрана, а не родителя */
+  max-width: 90vw;
   margin: 20px auto 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   backdrop-filter: blur(5px);
   color: #FFFFFF;
-  font-size: clamp(14px, 4vw, 16px); /* Адаптивный размер шрифта */
+  font-size: clamp(14px, 4vw, 16px);
   line-height: 1.6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-
-  /* Ключевые исправления: */
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
+}
 
-  /* Гарантируем, что блок не выйдет за пределы экрана */
-  width: auto;
-  min-width: 0; /* Позволяет flex/grid обрезать блок */
-  overflow: hidden; /* На случай, если что-то "вылезет" */
+/* Модальное окно — ЕДИНСТВЕННЫЙ набор стилей */
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#modalOverlay.open {
+  display: flex;
+  opacity: 1;
+}
+
+#modalImage {
+  max-width: 90vw;
+  max-height: 80vh;
+  border: 4px solid white;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#modalOverlay.open #modalImage {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+#modalImage.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-caption {
+  color: #FFFFFF;
+  font-size: clamp(18px, 4vw, 32px);
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  padding: 0 20px;
+  white-space: pre-line;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin-top: 12px;
+}
+
+/* Кнопки модального окна */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .modal-nav {
@@ -248,22 +222,25 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.prev {
-  left: 20px;
-}
+.prev { left: 20px; }
+.next { right: 20px; }
 
-.next {
-  right: 20px;
-}
-
-/* Скрытие стрелок, если фото одно */
 .modal-nav.hidden {
   display: none;
 }
- 
- 
- 
- 
- 
- 
-</style>
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .tree-node {
+    height: clamp(160px, 18vh, 200px);
+    max-width: 140px;
+    padding: 8px;
+  }
+  .name {
+    max-height: 60px;
+    font-size: 12px;
+  }
+  .name small {
+    font-size: 10px;
+  }
+}
