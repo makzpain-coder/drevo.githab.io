@@ -101,3 +101,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+function generatePDF() {
+  const doc = new jsPDF();
+  // Здесь добавьте код для заполнения PDF данными из древа
+  // Например, doc.text("Текст", 10, 10);
+  doc.save("древо.pdf");
+}
+
