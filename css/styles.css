@@ -192,12 +192,11 @@ body {
   }
 }
 
-
 .welcome-message {
   text-align: center;
   padding: 16px 20px;
   max-width: 1600px;
-  margin: 20px auto 40px; /* Отступ снизу — от текста до древа */
+  margin: 20px auto 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   backdrop-filter: blur(5px);
@@ -207,11 +206,17 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  width: 90%; /* Адаптивная ширина */
-  position: relative; /* На случай, если будешь добавлять иконки */
-  z-index: 10; /* Чтобы был выше других элементов, если нужно */
+  width: 90%;
+  position: relative;
+  z-index: 10;
+
+  /* Ключевые исправления: */
+  overflow-wrap: break-word;    /* Переносит длинные строки */
+  word-wrap: break-word;        /* Альтернатива для старых браузеров */
+  word-break: break-word;       /* Принудительный перенос, если нужно */
+  hyphens: auto;                /* Опционально — перенос с дефисами */
 }
- 
+
 .modal-nav {
   position: absolute;
   top: 50%;
