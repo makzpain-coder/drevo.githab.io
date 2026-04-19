@@ -185,7 +185,7 @@ body {
   /* Фиксируем высоту */
   height: 220px;
   /* Гибкая адаптация на разных экранах */
-  height: clamp(180px, 20vh, 240px);
+  height: clamp(220px, 20vh, 300px);
   /* Фон с лёгким затемнением для контраста */
   background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
